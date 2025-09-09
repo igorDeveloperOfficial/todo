@@ -2,10 +2,12 @@
 
 namespace Core\Middleware;
 
+use Core\Session;
+
 class Auth
 {
     public function handle(){
-        if(!$_SESSION['logged'] ?? false){
+        if(!Session::hasSession('logged')){
             redirect('/login');
         }
     }

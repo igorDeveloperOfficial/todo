@@ -3,7 +3,7 @@
 namespace Core;
 
 
-use Core\Middleware;
+use Core\Middleware\Middleware;
 
 class Router
 {

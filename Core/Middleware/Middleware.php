@@ -1,5 +1,4 @@
 <?php
-
 namespace Core\Middleware;
 use Exception;
 
@@ -21,7 +20,7 @@ class Middleware
             throw new \Exception("Middleware not found");
         }
 
-        (new $middleware())->handle();
+        (new $middleware)->handle();
 
     }
 

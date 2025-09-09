@@ -2,10 +2,12 @@
 
 namespace Core\Middleware;
 
+use Core\Session;
+
 class Guest
 {
     public function handle(){
-        if($_SESSION['logged'] ?? false){
+        if(Session::hasSession('logged')){
             redirect('/');
         }
     }

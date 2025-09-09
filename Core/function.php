@@ -18,10 +18,16 @@ function base_path($path)
 
 function view($url,$data = [])
 {
-    extract($data);
-    require base_path("views/{$url}.view.php}");
+   extract($data);
+   require base_path('views/'.$url.'.view.php');
 }
 
+function logout()
+{
+    $_SESSION = [];
+    session_destroy();
+    redirect('/');
+}
 function abort($code = \Core\Response::NOT_FOUND)
 {
     view($code);
