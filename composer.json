@@ -1,0 +1,9 @@
+{
+    "name": "igors/todo",
+    "require": {},
+    "autoload": {
+      "psr-4": {
+        "Core\\": "Core/"
+      }
+    }
+}
