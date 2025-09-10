@@ -1,5 +1,5 @@
 <?php
 
-$router->get('/','index')->only('auth');
+$router->get('/','index');
 $router->get('/login','login/index');
 $router->get('/register','register/index');

@@ -8,7 +8,7 @@ require base_path('vendor/autoload.php');
 
 $router = new Router();
 require base_path('routes.php');
-
+require base_path("bootstrap.php");
 $url = parse_url($_SERVER['REQUEST_URI'])['path'];
 $method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
 
