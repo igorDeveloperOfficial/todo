@@ -6,6 +6,7 @@
     <div class="row">
         <div class="col-12 mx-auto">
             <h1 class="display-4"><?=$heading?></h1>
+            <p>Welcome <?= $user ?></p>
         </div>
     </div>
 </div>

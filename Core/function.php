@@ -9,6 +9,7 @@ function dd($value = "Work"){
 
 function redirect($url){
     header("Location: {$url} ");
+    die();
 }
 
 function base_path($path)

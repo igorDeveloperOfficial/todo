@@ -5,7 +5,8 @@ namespace Core;
 class Session
 {
     static function hasSession($key){
-        return (bool) $_SESSION['flash'][$key]  ?? $_SESSION[$key]  ?? false;
+        return  $_SESSION['flashed'][$key] ?? $_SESSION[$key] ?? false;
+
     }
     static function createSession($key,$value){
         $_SESSION[$key] = $value;
@@ -21,5 +22,12 @@ class Session
 
     static function destroySession(){
         logout();
+    }
+
+
+
+    static function unflashed(){
+        unset($_SESSION['flashed']);
+        unset($_SESSION['success']);
     }
 }

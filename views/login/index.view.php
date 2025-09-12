@@ -21,6 +21,9 @@ require base_path('views/partials/header.php');
                 <button class="btn btn-primary mb-3">Login now</button>
 
                 <p><a href="/register" class="">You don't have an account ? Create now.</a></p>
+
+                <p class="mt-3 text-success"><?= $success ?? "" ?></p>
+                <p class="mt-3 text-danger"><?= $errors ?? "" ?></p>
             </form>
         </div>
     </div>

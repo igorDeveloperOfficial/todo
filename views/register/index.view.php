@@ -13,11 +13,13 @@ require base_path('views/partials/header.php');
                 <div class="form-group">
                     <label for="username" class="form-label">Username:</label>
                     <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username">
+                    <p class="mt-3 text-danger"><?= $errors['username'] ?? "" ?></p>
                 </div>
 
                 <div class="form-group my-3">
                     <label for="password" class="form-label">Password:</label>
                     <input type="password" class="form-control" id="password" name="password" placeholder="********">
+                    <p class="mt-3 text-danger"><?= $errors['password'] ?? "" ?></p>
                 </div>
 
                 <div class="form-group mb-5">
@@ -26,6 +28,10 @@ require base_path('views/partials/header.php');
                 </div>
 
                 <button class="btn btn-primary">Create</button>
+
+                <p class="mt-3 text-danger"><?= $errors['user'] ?? "" ?></p>
+
+
             </form>
         </div>
     </div>
