@@ -1,1 +1,22 @@
 /*TODO APP CSS CUSTOM*/
+.delete-icon,.edit-icon{
+    width:20px;
+    height:20px;
+}
+.delete-icon{
+    fill: red;
+    stroke: white;
+}
+.icons{
+    cursor: pointer;
+}
+.editForm{
+    display:none;
+}
+.activeForm{
+    display:block;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
