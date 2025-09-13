@@ -5,15 +5,13 @@ class Form
 {
     protected $errors = [];
 
-     public function formValidation($username,$password): bool
+     public function formValidation($task): bool
      {
-        if(!FormValidation::string($username)){
-            $this->errors['username'] = "Username required";
+        if(!FormValidation::string($task)){
+            $this->errors['task'] = "Task field is required";
 
         }
-        if(!FormValidation::string($password)){
-            $this->errors['password'] = "Password required";
-        }
+
 
 
         return (bool) empty($this->errors);

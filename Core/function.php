@@ -27,7 +27,7 @@ function logout()
 {
     $_SESSION = [];
     session_destroy();
-    redirect('/');
+    redirect('/login');
 }
 function abort($code = \Core\Response::NOT_FOUND)
 {
