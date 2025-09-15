@@ -1,6 +1,6 @@
 <?php
 
-function dd($value = "Work"){
+function show($value = "Work"){
     echo '<pre>';
     var_dump($value);
     echo '</pre>';
