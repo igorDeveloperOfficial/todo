@@ -18,12 +18,11 @@ class Tasks
             $db = \Core\App::resolve(Database::class);
 
             $finishDate = $_POST["finish_date"];
-            $db->query("INSERT INTO todo (task,user_id,finished,date_created,finish_task) VALUES (:task,:user_id,:finished,:date_created,:finish_task)",[
+            $db->query("INSERT INTO todo (task,user_id,finished,date_created) VALUES (:task,:user_id,:finished,:date_created)",[
                 ':task' => $task,
                 ':user_id' => $this->user['id'],
                 ':finished' => 0,
                 ':date_created' => $this->currentDate,
-                ':finish_task' => $finishDate
 
             ]);
             return true;

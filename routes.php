@@ -9,3 +9,7 @@ $router->post('/login','login/login')->only('guest');
 
 
 $router->post('/create','todo/create')->only('auth');
+
+$router->post('/update','todo/finish');
+$router->get('/delete','todo/delete');
+$router->put('/update','todo/update');

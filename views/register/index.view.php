@@ -7,7 +7,7 @@ require base_path('views/partials/header.php');
 
 <div class="container">
     <div class="row vh-100 d-flex flex-column justify-content-center align-items-center">
-        <div class="col-4 mx-auto">
+        <div class="col-sm-12 col-md-5 mx-auto">
             <h1 class="h1 mb-3">Todo - Create Account</h1>
             <form action="/register" method="post" enctype="multipart/form-data" class="form">
                 <div class="form-group">
